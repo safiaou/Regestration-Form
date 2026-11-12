@@ -1,0 +1,140 @@
+body {
+    background: linear-gradient(to right, #ebd0c6, #cfa153, #e4c673);
+    font-family: 'Poppins', sans-serif;
+}
+
+#form {
+    width: 100%;
+    max-width: 340px;
+    box-sizing: border-box;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: rgb(173, 220, 150);
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#form h1 {
+    color: #49300e;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: rgb(235, 223, 185);
+    background-color: rgba(50, 31, 14, 0.655);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#form button:hover {
+    background-color: rgb(235, 223, 185);
+    color: rgba(50, 31, 14, 0.655);
+}
+
+@media (max-width: 584px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    #form {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+
+    .input-control input {
+        font-size: 16px;
+    }
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    font-family: inherit;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-control input:focus {
+    outline: 0;
+    border-color: #49300e;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 16px;
+}
+
+/* زر العين */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 40px;
+}
+
+#form .toggle-password {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    margin-top: 0;
+    padding: 0;
+    background: none;
+    color: #49300e;
+    font-size: 16px;
+    line-height: 1;
+}
+
+#form .toggle-password:hover {
+    background: none;
+    color: #49300e;
+}
+
+/* خانة الموافقة على الشروط */
+.checkboxes {
+    margin-top: 5px;
+}
+
+.checkboxes .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 16px;
+}
+
+/* أيقونات العين */
+.toggle-password .icon-eye {
+    display: none;
+}
+
+.toggle-password.showing .icon-eye {
+    display: block;
+}
+
+.toggle-password.showing .icon-eye-off {
+    display: none;
+}
